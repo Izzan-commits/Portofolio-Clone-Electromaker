@@ -15,6 +15,9 @@ body {
   color: #36b37e;
 }
 
+.container{
+  background: #1e40af;
+}
 .search-box {
   border: 1px solid #dcdcdc;
   border-radius: 50px;
