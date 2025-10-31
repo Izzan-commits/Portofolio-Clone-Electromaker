@@ -96,6 +96,7 @@
     max-width: 450px;
     margin: 15px auto;
     padding: 0 12px;
+    text-align: right;
 }
 .search-box input {
     flex: 1;
