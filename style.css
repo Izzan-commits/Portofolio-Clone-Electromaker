@@ -78,7 +78,7 @@
 /* Category Bar */
 .category-nav {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     gap: 22px;
     background: white;
     padding: 12px;
