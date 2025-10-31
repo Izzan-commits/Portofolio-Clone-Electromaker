@@ -4,29 +4,22 @@
     background: #f7f9fb;
 }
 
-/* Top Banner */
 .top-banner {
     background: #0fa958;
     color: white;
     text-align: center;
-    padding: 6px 0;
     font-size: 14px;
 }
 
-/* NAV BLUE */
 .nav-blue {
     background: #06284e;
-    padding: 14px 0;
 }
 
 .nav-content {
-    max-width: 1150px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 14px;
-    padding: 0 12px;
 }
 
 .logo {
