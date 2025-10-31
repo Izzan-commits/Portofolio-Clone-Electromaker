@@ -6,70 +6,72 @@
     <title>Your Maker Site</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-banner text-center text-white">
-        We typically ship your component the same day*
-    </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-        <div class="container">
-            
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <span class="fw-bold">electro<span class="text-success">{maker}</span></span>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center gap-3">
-                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Project Hub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                </ul>
-                <a class="btn btn-success ms-3">Join us</a>
-            </div>
+<div class="top-banner text-center">
+    We typically ship your component the same day*
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark main-nav py-3">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="fw-bold">electro<span class="text-success">{maker}</span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-3">
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Project Hub</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+            </ul>
+            <a class="btn btn-success ms-3">Join us</a>
         </div>
-    </nav>
-    
-    <div class="container py-3">
-        <div class="row align-items-center">
-            <div class="col-lg-6 d-flex gap-4 flex-wrap mb-3 mb-lg-0">
-                <a href="#" class="sub-link">Categories</a>
-                <a href="#" class="sub-link">Brands</a>
-                <a href="#" class="sub-link">FAQs</a>
-                <a href="#" class="sub-link">Help & Support</a>
-            </div>
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <input type="text" class="form-control py-2" placeholder="Search for a product or part number">
-                    <button class="btn btn-outline-secondary">🔍</button>
-                </div>
+    </div>
+</nav>
+
+<div class="container py-3">
+    <div class="row align-items-center">
+        <div class="col-lg-6 d-flex gap-4 flex-wrap mb-3 mb-lg-0">
+            <a href="#" class="sub-link">Categories</a>
+            <a href="#" class="sub-link">Brands</a>
+            <a href="#" class="sub-link">FAQs</a>
+            <a href="#" class="sub-link">Help & Support</a>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control py-2" placeholder="Search for a product or part number">
+                <button class="btn btn-outline-secondary">🔍</button>
             </div>
         </div>
     </div>
-    
-    <div class="container text-center py-4 brand-strip">
-        <div class="d-flex flex-wrap justify-content-center gap-4">
-            <img src="logo1.png" alt="Brand1" class="brand-logo">
-            <img src="logo2.png" alt="Brand2" class="brand-logo">
-            <img src="logo3.png" alt="Brand3" class="brand-logo">
-            <img src="logo4.png" alt="Brand4" class="brand-logo">
-            <img src="logo5.png" alt="Brand5" class="brand-logo">
-            <img src="logo6.png" alt="Brand6" class="brand-logo">
-        </div>
+</div>
+
+<div class="container text-center py-4 brand-strip">
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+        <img src="logo1.png" class="brand-logo">
+        <img src="logo2.png" class="brand-logo">
+        <img src="logo3.png" class="brand-logo">
+        <img src="logo4.png" class="brand-logo">
+        <img src="logo5.png" class="brand-logo">
+        <img src="logo6.png" class="brand-logo">
     </div>
-    
-    <div class="container text-center py-5">
-        <h1 class="display-5 fw-bold">Much more than a component shop</h1>
-        <h1 class="display-5 fw-bold text-primary">we're a Maker Community</h1>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<div class="container py-5 hero-section">
+    <h1 class="display-5 fw-bold">Much more than a component shop</h1>
+    <h1 class="display-5 fw-bold text-primary">we're a Maker Community</h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
