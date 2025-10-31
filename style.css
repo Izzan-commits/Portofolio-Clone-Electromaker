@@ -1,18 +1,15 @@
-/* Banner */
-.top-banner {
-    background: #00a85a;
+.top-banner{
+    background: #20c997;
     color: white;
     text-align: center;
     padding: 8px 0;
     font-size: 14px;
 }
 
-/* Navbar Buttons */
 .menu-btn {
     border: 1px solid #ccc;
 }
 
-/* Search Bar */
 .search-box input {
     border: 1px solid #ccc;
     padding: 10px;
