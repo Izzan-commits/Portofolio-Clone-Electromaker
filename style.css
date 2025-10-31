@@ -23,13 +23,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    width: 72%;
     margin: auto;
 }
 
 .logo {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
 }
 
