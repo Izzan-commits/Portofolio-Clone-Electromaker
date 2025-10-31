@@ -8,61 +8,71 @@
 </head>
 <body>
 
-    <div class="top-banner">
-        We typically ship your component the same day*
-    </div>
+<!-- Top Banner -->
+<div class="top-banner">
+    We typically ship your component the same day*
+</div>
 
-    <!-- Blue Navbar (Main) -->
-    <nav class="nav-blue">
-        <div class="nav-content">
+<!-- Blue Navbar -->
+<nav class="nav-blue">
+    <div class="nav-content">
+        
+        <div class="logo">electro<span>{maker}</span></div>
 
-            <div class="logo">electro<span>{maker}</span></div>
+        <ul class="menu">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Platforms</a></li>
+            <li><a href="#">Project Hub</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
 
-            <ul class="menu">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Platforms</a></li>
-                <li><a href="#">Project Hub</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Login</a></li>
-                <button class="join-btn">Join us</button>
-                <a href="#" class="text-dark position-relative"> 🛒
-                    <span class="badge bg-success position-absolute top-0 start-100 translate-middle">0</span>
-                </a>
-            </ul>
-
+        <div class="right-actions">
+            <button class="join-btn">Join us</button>
+            <a href="#" class="cart">🛒 <span>0</span></a>
         </div>
-    </nav>
 
-    <!-- Category Links -->
-    <div class="category-nav">
-        <a href="#">Categories</a>
-        <a href="#">Brands</a>
-        <a href="#">FAQs</a>
-        <a href="#">Help & Support</a>
+        <div class="mobile-menu-toggle">☰</div>
     </div>
+</nav>
 
-    <!-- Search Bar -->
-    <div class="search-box">
-        <input type="text" placeholder="Search for a product or part number">
-        <button class="search-btn">🔍</button>
-    </div>
+<!-- Second Navbar -->
+<div class="category-nav">
+    <a href="#">Categories</a>
+    <a href="#">Brands</a>
+    <a href="#">FAQs</a>
+    <a href="#">Help & Support</a>
+</div>
 
-    <!-- Brand Scroller -->
-    <div class="brand-row">
-        <img src="arduino.png" class="brand">
-        <img src="adafruit.png" class="brand">
-        <img src="m5stack.png" class="brand">
-        <img src="seeed.png" class="brand">
-        <img src="raspberry.png" class="brand">
-        <img src="pimoroni.png" class="brand">
-    </div>
+<!-- Search Bar -->
+<div class="search-box">
+    <input type="text" placeholder="Search for a product or part number">
+    <button class="search-btn">🔍</button>
+</div>
 
-    <hr class="divider">
+<!-- Brand bar -->
+<div class="brand-row">
+    <img src="arduino.png" class="brand">
+    <img src="adafruit.png" class="brand">
+    <img src="m5stack.png" class="brand">
+    <img src="seeed.png" class="brand">
+    <img src="raspberry.png" class="brand">
+    <img src="pimoroni.png" class="brand">
+</div>
 
-    <section class="hero">
-        <h1>Much more than a component shop<br>we're a <span>Maker Community</span></h1>
-    </section>
+<hr class="divider">
+
+<section class="hero">
+    <h1>Much more than a component shop<br>
+    We're a <span>Maker Community</span></h1>
+</section>
+
+<script>
+document.querySelector(".mobile-menu-toggle").onclick = () => {
+    document.querySelector(".menu").classList.toggle("show");
+};
+</script>
 
 </body>
 </html>
