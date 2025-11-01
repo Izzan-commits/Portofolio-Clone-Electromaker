@@ -1,3 +1,4 @@
+/* banner ijo atas */
 .top-banner {
     background: #27c383;
     font-size: 14px;
@@ -6,10 +7,12 @@
     color: black;
 }
 
+/* warna navbar */
 .main-nav {
     background-color: #001f54 !important;
 }
 
+/* link kecil */
 .sub-link {
     color: #333;
     font-weight: 500;
@@ -19,40 +22,45 @@
     color: #007bff;
 }
 
+/* hero text kiri */
 .hero-section {
     text-align: left !important;
 }
 
+/* warna tulisan navy */
 .text-navy {
     color: #001f54 !important;
 }
 
-.brand-container {
-  width: 100%;
-  overflow: hidden;
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
-  background: #fff;
+/* bungkus carousel */
+.brand-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    background: #fff;
 }
 
-.brand-slider {
-  display: flex;
-  gap: 40px;
-  animation: slide 18s linear infinite;
+/* track logo, jalan terus */
+.brand-carousel {
+    display: flex;
+    width: max-content;
+    gap: 50px;
+    animation: scroll 18s linear infinite; /* ini yang bikin jalan auto */
 }
 
-.brand-slider img {
-  height: 45px;
-  opacity: 0.8;
-  transition: .3s;
+/* ukuran logo */
+.brand-carousel img {
+    height: 45px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+.brand-carousel img:hover {
+    opacity: 1;
 }
 
-@keyframes slide {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@media (max-width: 576px) {
-  .brand-slider { gap: 25px; }
-  .brand-slider img { height: 32px; }
+/* animasi gerak kanan -> kiri */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
