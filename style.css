@@ -19,24 +19,46 @@
     color: #007bff;
 }
 
-.brand-logo {
-    height: 45px;
-    object-fit: contain;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-.brand-logo:hover {
-    opacity: 1;
-}
-
-.brand-strip {
-    border-bottom: 1px solid #ddd;
-}
-
 .hero-section {
     text-align: left !important;
 }
 
 .text-navy {
     color: #001f54 !important;
+}
+
+/* ✅ Infinite brand scroll */
+.brand-container {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.brand-slider {
+  display: flex;
+  gap: 40px;
+  animation: slide 18s linear infinite;
+}
+
+.brand-slider img {
+  height: 45px;
+  opacity: 0.8;
+  transition: .3s;
+}
+
+.brand-slider img:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 576px) {
+  .brand-slider { gap: 25px; }
+  .brand-slider img { height: 32px; }
 }
