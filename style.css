@@ -47,11 +47,6 @@
   transition: .3s;
 }
 
-.brand-slider img:hover {
-  opacity: 1;
-  transform: translateY(-5px);
-}
-
 @keyframes slide {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
