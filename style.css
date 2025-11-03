@@ -1,4 +1,4 @@
-/* banner ijo atas */
+/* Banner ijo atas */
 .top-banner {
     background: #27c383;
     font-size: 14px;
@@ -7,12 +7,54 @@
     color: black;
 }
 
-/* warna navbar */
+/* Navbar biru */
 .main-nav {
     background-color: #001f54 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-/* link kecil */
+/* Menu navbar */
+.navbar-nav .nav-link1 {
+    color: #fff;
+    font-weight: 500;
+    padding: 0 14px;
+    font-size: 17px;
+    transition: 0.25s;
+}
+.navbar-nav .nav-link1:hover {
+    color: #27c383;
+}
+
+/* Tombol join jarak */
+.navbar .btn {
+    margin-left: 25px;
+}
+
+/* Icon keranjang */
+.cart-icon {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+.cart-icon:hover {
+    color: #27c383;
+}
+
+/* Bubble jumlah item */
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #27c383;
+    color: #001f54;
+    font-weight: 600;
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 2px 5px;
+}
+
+/* Submenu kecil */
 .sub-link {
     color: #333;
     font-weight: 500;
@@ -22,45 +64,33 @@
     color: #007bff;
 }
 
-/* hero text kiri */
-.hero-section {
-    text-align: left !important;
-}
+/* Hero kiri */
+.hero-section { text-align: left; }
 
-/* warna tulisan navy */
-.text-navy {
-    color: #001f54 !important;
-}
+/* Warna text navy */
+.text-navy { color: #001f54 !important; }
 
-/* bungkus carousel */
+/* Carousel brand */
 .brand-carousel-wrapper {
-    width: 100%;
     overflow: hidden;
     border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    padding: 12px 0;
     background: #fff;
 }
-
-/* track logo, jalan terus */
 .brand-carousel {
     display: flex;
-    width: max-content;
     gap: 50px;
-    animation: scroll 18s linear infinite; /* ini yang bikin jalan auto */
+    animation: scroll 18s linear infinite;
 }
-
-/* ukuran logo */
 .brand-carousel img {
     height: 45px;
-    opacity: 0.85;
-    transition: 0.3s;
+    opacity: .85;
+    transition: .3s;
 }
 .brand-carousel img:hover {
     opacity: 1;
 }
-
-/* animasi gerak kanan -> kiri */
 @keyframes scroll {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    to   { transform: translateX(-50%); }
 }
