@@ -30,6 +30,20 @@
     margin-left: 25px;
 }
 
+.mid-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right-menu .nav-link1 {
+  margin-right: 10px;
+}
+
+.right-menu .btn {
+  margin-right: 10px;
+}
+
 /* Icon keranjang */
 .cart-icon {
     position: relative;
