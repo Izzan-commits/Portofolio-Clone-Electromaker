@@ -1,110 +1,84 @@
-/* Banner ijo atas */
+/* Top Banner */
 .top-banner {
-    background: #27c383;
-    font-size: 14px;
-    padding: 8px 0;
-    font-weight: 500;
-    color: black;
+  background: #2ecc71;
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 14px;
 }
 
-/* Navbar biru */
+/* Navbar Base */
 .main-nav {
-    background-color: #001f54 !important;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: #092140;
+  padding: 14px 0;
 }
 
-/* Menu navbar */
-.navbar-nav .nav-link1 {
-    color: #fff;
-    font-weight: 500;
-    padding: 0 14px;
-    font-size: 17px;
-    transition: 0.25s;
+.nav-link1 {
+  color: white;
+  margin: 0 12px;
+  font-weight: 500;
 }
-.navbar-nav .nav-link1:hover {
-    color: #27c383;
+.nav-link1:hover {
+  color: #4AD879;
 }
 
-/* Tombol join jarak */
-.navbar .btn {
-    margin-left: 25px;
-}
-
+/* Center Menu Desktop */
 .mid-menu {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.right-menu .nav-link1 {
-  margin-right: 10px;
+/* Join Button Style */
+.join-btn {
+  background: #4AD879;
+  color: #092140 !important;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+.join-btn:hover {
+  background: #38b66b;
 }
 
-.right-menu .btn {
-  margin-right: 10px;
-}
-
-/* Icon keranjang */
+/* Cart Style */
 .cart-icon {
-    position: relative;
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
+  font-size: 22px;
+  color: white;
 }
-.cart-icon:hover {
-    color: #27c383;
-}
-
-/* Bubble jumlah item */
 .cart-count {
-    position: absolute;
-    top: -6px;
-    right: -10px;
-    background: #27c383;
-    color: #001f54;
-    font-weight: 600;
-    border-radius: 50%;
-    font-size: 11px;
-    padding: 2px 5px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #4AD879;
+  color: #092140;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: 700;
 }
 
-/* Submenu kecil */
-.sub-link {
-    color: #333;
-    font-weight: 500;
-    text-decoration: none;
-}
-.sub-link:hover {
-    color: #007bff;
+/* Mobile  */
+@media(max-width: 992px) {
+  .mid-menu {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-menu {
+    justify-content: center;
+    margin-top: 12px;
+    gap: 12px;
+  }
 }
 
-/* Hero kiri */
-.hero-section { text-align: left; }
-
-/* Warna text navy */
-.text-navy { color: #001f54 !important; }
-
-/* Carousel brand */
-.brand-carousel-wrapper {
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
-    background: #fff;
-}
-.brand-carousel {
-    display: flex;
-    gap: 50px;
-    animation: scroll 18s linear infinite;
-}
-.brand-carousel img {
-    height: 45px;
-    opacity: .85;
-    transition: .3s;
-}
-.brand-carousel img:hover {
-    opacity: 1;
-}
-@keyframes scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+/* Toggler Border White */
+.custom-toggler {
+  border-color: white;
 }
