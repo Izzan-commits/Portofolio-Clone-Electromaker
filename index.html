@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ijantit Site</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons untuk keranjang -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electromaker Clone</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Banner atas -->
-<div class="top-banner text-center">
-    We typically ship your component the same day*
+<!-- ✅ Top Green Banner -->
+<div class="top-banner">
+  We typically ship your component the same day*
 </div>
 
-<!-- Navbar biru -->
-<nav class="navbar navbar-expand-lg main-nav navbar-dark">
-  <div class="container">
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+  <div class="container position-relative">
 
     <!-- Logo -->
     <a class="navbar-brand fw-bold text-white" href="#">
-  electro<span style="color:#4AD879">{maker}</span>
-</a>
-
-<ul class="navbar-nav mid-menu mb-2 mb-lg-0">
-  <li class="nav-item"><a class="nav-link1" href="#">Shop</a></li>
-  <li class="nav-item"><a class="nav-link1" href="#">Projects</a></li>
-  <li class="nav-item"><a class="nav-link1" href="#">Community</a></li>
-  <li class="nav-item"><a class="nav-link1" href="#">Blog</a></li>
-</ul>
-
-<ul class="navbar-nav right-menu ms-auto align-items-center">
-  <li class="nav-item"><a class="nav-link1" href="#">Login</a></li>
-  <li class="nav-item"><a class="btn join-btn" href="#">Join Us</a></li>
-  <li class="nav-item">
-    <a class="nav-link1 cart-icon" href="#">
-      🛒<span class="cart-count">0</span>
+      electro<span style="color:#4AD879">{maker}</span>
     </a>
-  </li>
-</ul>
 
-<!-- MENU KANAN -->
-      <ul class="navbar-nav ms-auto align-items-center right-menu">
+    <!-- Toggler -->
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse Menu -->
+    <div class="collapse navbar-collapse" id="menu">
+
+      <!-- Mid Menu -->
+      <ul class="navbar-nav mid-menu mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link1" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link1" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link1" href="#">Community</a></li>
+        <li class="nav-item"><a class="nav-link1" href="#">Blog</a></li>
+      </ul>
+
+      <!-- Right Menu -->
+      <ul class="navbar-nav right-menu ms-auto align-items-center">
         <li class="nav-item"><a class="nav-link1" href="#">Login</a></li>
+
         <li class="nav-item">
-          <button class="btn btn-light">Join Us</button>
+          <a class="btn join-btn" href="#">Join Us</a>
         </li>
-        <li class="nav-item">
-          <div class="cart-icon">
-            <i class="bi bi-cart"></i>
-            <span class="cart-count">0</span>
-          </div>
+
+        <li class="nav-item position-relative">
+          <a class="nav-link1 cart-icon" href="#">🛒</a>
+          <span class="cart-count">0</span>
         </li>
       </ul>
 
     </div>
-
   </div>
 </nav>
+
+<!-- ✅ Dummy Section -->
+<section class="p-5 text-center">
+  <h1>Much more than a component shop</h1>
+  <p>We're a Maker Community</p>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
 
 
 <!-- Menu kecil + Search -->
