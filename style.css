@@ -1,84 +1,142 @@
-/* Top Banner */
+/* ✅ Banner hijau atas */
 .top-banner {
-  background: #2ecc71;
-  color: white;
-  text-align: center;
-  padding: 6px 0;
+  background: #27c383;
+  color: black;
   font-size: 14px;
-}
-
-/* Navbar Base */
-.main-nav {
-  background: #092140;
-  padding: 14px 0;
-}
-
-.nav-link1 {
-  color: white;
-  margin: 0 12px;
+  padding: 8px 0;
   font-weight: 500;
 }
-.nav-link1:hover {
-  color: #4AD879;
+
+/* ✅ Navbar warna navy */
+.main-nav {
+  background-color: #001f54 !important;
 }
 
-/* Center Menu Desktop */
-.mid-menu {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Join Button Style */
-.join-btn {
-  background: #4AD879;
-  color: #092140 !important;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-weight: 600;
-}
-.join-btn:hover {
-  background: #38b66b;
-}
-
-/* Cart Style */
-.cart-icon {
+/* ✅ Logo styling */
+.navbar-brand {
   font-size: 22px;
-  color: white;
-}
-.cart-count {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  background: #4AD879;
-  color: #092140;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 50%;
   font-weight: 700;
 }
 
-/* Mobile  */
-@media(max-width: 992px) {
-  .mid-menu {
-    position: static;
-    transform: none;
-    text-align: center;
-  }
-
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
-
-  .right-menu {
-    justify-content: center;
-    margin-top: 12px;
-    gap: 12px;
-  }
+/* ✅ Link menu */
+.nav-link1, 
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.2s;
 }
 
-/* Toggler Border White */
-.custom-toggler {
-  border-color: white;
+.nav-link1:hover,
+.nav-link:hover {
+  color: #27c383 !important;
+}
+
+/* ✅ Join Us button */
+.btn-success {
+  background: #27c383 !important;
+  border-color: #27c383 !important;
+  font-weight: 600;
+}
+
+/* ✅ Cart icon */
+.cart-icon {
+  font-size: 20px;
+  position: relative;
+}
+
+/* ✅ Cart badge */
+.cart-badge {
+  font-size: 11px;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+}
+
+/* ✅ Sub links (Categories, Brands, FAQs) */
+.sub-link {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sub-link:hover {
+  color: #007bff;
+}
+
+/* ✅ Search bar */
+.input-group input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* ✅ Brand slider container */
+.brand-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  background: #fff;
+}
+
+/* ✅ Brand slider row */
+.brand-carousel {
+  display: flex;
+  width: max-content;
+  gap: 50px;
+  animation: scroll 18s linear infinite;
+}
+
+/* ✅ Brand logo size */
+.brand-carousel img {
+  height: 45px;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.brand-carousel img:hover {
+  opacity: 1;
+}
+
+/* ✅ Slider animation */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ✅ Pause brand slider on hover */
+.brand-carousel:hover {
+  animation-play-state: paused;
+}
+
+/* ✅ Hero text left style by default */
+.hero-section {
+  text-align: left !important;
+}
+
+/* ✅ Navy text */
+.text-navy {
+  color: #001f54 !important;
+}
+
+/* ✅ Mobile menu fix */
+@media (max-width: 992px) {
+
+  /* Center menu when collapsed */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 6px 0;
+  }
+
+  /* Join button full width in mobile */
+  .btn-success {
+    width: 100%;
+  }
+
+  /* Reduce gap in menu mobile */
+  .navbar-nav.gap-3 {
+    gap: 10px !important;
+  }
 }
